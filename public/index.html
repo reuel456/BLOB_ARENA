@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blob Arena - Multiplayer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU INICIAL -->
+    <div id="menu">
+
+        <h1>BLOB ARENA</h1>
+
+        <p>Entre na arena e fique gigante!</p>
+
+        <input
+            type="text"
+            id="playerName"
+            placeholder="Digite seu nome"
+            maxlength="15"
+        >
+
+        <button id="playButton">
+            JOGAR
+        </button>
+
+        <p id="status">Conectando ao servidor...</p>
+
+    </div>
+
+<div id="controls">
+  <b>CONTROLES</b>
+  <p>🖱️ Mouse: movimentar</p>
+  <p>SPACE: dividir</p>
+  <p>W: ejetar massa</p>
+  <p>Q: divisão dupla</p>
+  <p>E: dividir em 16</p>
+  <p>F: usar poder</p>
+  <p>1-6: chat rápido</p>
+  <p>M: minimapa</p>
+  <p>ESC: pausar</p>
+  <p>Roda: zoom</p>
+</div>
+
+
+    <!-- HUD DO JOGO -->
+    <div id="hud">
+
+        <h2 id="score">Massa: 18</h2>
+
+        <div id="leaderboard"></div>
+
+    </div>
+
+    <!-- ARENA -->
+    <canvas id="game"></canvas>
+
+    <!-- SOCKET.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- CÓDIGO DO JOGO -->
+    <script src="game.js"></script>
+
+</body>
+</html>

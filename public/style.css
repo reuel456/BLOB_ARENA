@@ -1,0 +1,95 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #101827;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: none;
+  background: #172638;
+}
+
+#menu {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: radial-gradient(circle, #263f62, #101827);
+  z-index: 5;
+}
+
+#menu h1 {
+  font-size: 60px;
+  color: #35e6ff;
+  text-shadow: 0 0 20px #35e6ff;
+}
+
+input {
+  padding: 15px;
+  border: 2px solid #35e6ff;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+button {
+  padding: 15px 50px;
+  background: #35e6ff;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#status {
+  color: #ccc;
+}
+
+#hud {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#leaderboard {
+  margin-top: 12px;
+  line-height: 1.7;
+  background: #0009;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#controls {
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 3;
+  padding: 12px;
+  background: #07111ddd;
+  border: 1px solid #ffffff33;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+  pointer-events: none;
+}
+
+#controls b {
+  color: #35e6ff;
+}
+
